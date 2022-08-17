@@ -1,10 +1,16 @@
 import { useState } from "react";
+import bgTop from "./images/bg-top.svg";
+import bgBottom from "./images/bg-bottom.svg";
 
 function App() {
   const [annually, setAnnually] = useState(false);
 
   return (
     <>
+      <div className="img-pos absolute top-0 right-0">
+        <img src={bgTop} alt="" className="w-full max-w-full" />
+      </div>
+
       <section className="p-5 lg:flex lg:flex-col items-center justify-center lg:h-screen">
         <h1 className="text-center text-slate-700 mb-8 text-4xl">
           Our Pricing
@@ -128,6 +134,10 @@ function App() {
           .
         </div>
       </section>
+
+      <div className="img-pos absolute bottom-0 left-0">
+        <img src={bgBottom} alt="" className="w-full max-w-full" />
+      </div>
     </>
   );
 }
