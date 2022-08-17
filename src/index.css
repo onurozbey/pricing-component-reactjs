@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 400;
+
+  /* Colors */
+  --linear-gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%);
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+
+  background-color: var(--very-light-grayish-blue);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 40px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* Custom sytles */
+.linear-gradient {
+  background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.button:hover {
+  background: linear-gradient(
+    90deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0)
+  );
+  color: hsl(237, 63%, 64%);
+}
+
+.pro {
+  transform: scale(1.1);
+}
+/* Toogle styles */
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox {
+  display: none;
+}
+
+.label {
+  position: relative;
+  background: linear-gradient(120deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding: 5px;
+  margin: 0 20px;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.name {
+  font-size: 14px;
+  color: hsl(234, 14%, 74%);
+}
+
+.ball {
+  background: #fff;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  transition: transform 0.15s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);
+}
