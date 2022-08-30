@@ -22,14 +22,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.attribution {
-  font-size: 12px;
-  text-align: center;
-  margin-top: 40px;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 /* Custom sytles */
 .linear-gradient {
   background: linear-gradient(90deg, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
